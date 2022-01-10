@@ -24,14 +24,14 @@ export default function Index() {
             fontFamily="DejaVu Sans Mono, monospace"
           >
             <Grid item xs={2}>
-              <Button variant="text" style={{ color: '#000'}} component={Link} noLinkStyle href="/live">
-                <LiveTvIcon style={{ minWidth: '40px', paddingBottom: '5px'}}/>
+              <Button variant="text" style={{ color: '#000'}} component={Link} noLinkStyle href="http://hdlivestream.in/sanjanawedsshirish">
+                <LaunchIcon style={{ minWidth: '40px', paddingBottom: '5px'}}/>
                 <Typography variant="button" display="block" gutterBottom>
-                    LIVE
+                  LIVE
                 </Typography>
               </Button>
             </Grid>
-            <Grid item xs={2}>
+            <Grid item xs={4}>
               <Button variant="text" style={{ color: '#000'}} component={Link} noLinkStyle href="https://computersandtacos.com">
                 <LaunchIcon style={{ minWidth: '40px', paddingBottom: '5px'}}/>
                 <Typography variant="button" display="block" gutterBottom>

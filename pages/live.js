@@ -7,7 +7,8 @@ import Grid from '@mui/material/Grid';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import Router from 'next/router';
 import * as catWaiting from '../animations/46472-lurking-cat.json';
-import Lottie from 'react-lottie'
+import Lottie from 'react-lottie';
+import AddToCalendar from '@culturehq/add-to-calendar';
 
 const waitingOptions = {
   loop: true,
@@ -19,6 +20,14 @@ const waitingOptions = {
 };
 
 export default function Live() {
+  let event = {
+    name: "Sanjana Weds Shirish",
+    details: "Sanjana and Shirish Live Stream",
+    location: "Nizamabad, Telangana",
+    startsAt: "2021-12-13T12:00:00+07:00",
+    endsAt: "2021-12-13T19:00:00+07:00"
+  };
+
   return (
     <Container maxWidth="sm">
       <Box sx={{ my: 4 }}>
@@ -53,6 +62,9 @@ export default function Live() {
             <Typography style={{ fontFamily: 'FreeMono, monospace'}} gutterBottom variant="body2" color="text.secondary">
               Stream starts @ Dec 13th, 2021 | 11:35 AM
             </Typography>
+            {/*<Button variant="text" >*/}
+            {/*  <AddToCalendar event={event} />*/}
+            {/*</Button>*/}
           </Grid>
         </Grid>
         <Grid
@@ -64,8 +76,8 @@ export default function Live() {
         >
           <Grid item xs={12}>
             <Lottie options={waitingOptions}
-                    height={300}
-                    width={300}
+                    height={500}
+                    width={500}
             />
           </Grid>
         </Grid>

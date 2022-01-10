@@ -3,6 +3,7 @@
   "version": "5.0.0",
   "private": true,
   "dependencies": {
+    "@culturehq/add-to-calendar": "^1.1.2",
     "@emotion/cache": "latest",
     "@emotion/react": "latest",
     "@emotion/server": "latest",
@@ -11,10 +12,13 @@
     "@mui/material": "latest",
     "@mui/styles": "^5.1.0",
     "clsx": "latest",
+    "moment": "^2.29.1",
     "next": "latest",
     "prop-types": "latest",
     "react": "latest",
+    "react-add-to-calendar": "^0.1.5",
     "react-dom": "latest",
+    "react-google-maps": "^9.4.5",
     "react-lottie": "^1.2.3"
   },
   "scripts": {
